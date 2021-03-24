@@ -2,12 +2,7 @@
 
 .CountryQuizz {
   text-align: center;
-  /* width: 100vw;
-  height: 100vh; */
 }
-
-
-
 .container{
   display: flex;
   align-items: center;
@@ -16,17 +11,19 @@
   width: 100vw;
   height: 100vh;
 }
-
 .contenido{
 display: flex;
 flex-direction: column;
 width: 464px;
 height: 515px;
-background: #ffffffef;
+background: #ffffff;
 border-radius: 24px;
 margin: auto;
-}
 
+}
+.quiz{
+  /* border: solid 1px white; */
+}
 .title{
 font-family: Poppins;
 font-style: normal;
@@ -35,6 +32,14 @@ font-size: 36px;
 line-height: 54px;
 text-transform: uppercase;
 color: #F2F2F2;
+text-align: left;
+}
+.adventuresvg{
+  display: flex;
+  position: absolute;
+  left: 54vw;
+  bottom: 69vh;
+  
 }
 .question{
   font-family: Poppins;
@@ -43,13 +48,19 @@ color: #F2F2F2;
   font-size: 24px;
   line-height: 36px;
   color: #2F527B;
+  margin-top: 70px;
+}
+.alternatives{
+  display: flex;
+  flex-direction: column;
+  margin: auto;
 }
 
 .respuesta-A, .respuesta-B, .respuesta-C, .respuesta-D{
   display: flex;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
-  margin: auto;
+  margin: 15px;
   width: 400px;
   height: 56px;
   left: 520px;
@@ -64,24 +75,20 @@ color: #F2F2F2;
   font-size: 18px;
   line-height: 27px;
   color: rgba(96, 102, 208, 0.8);
+  outline: none;
 
 } 
 
-.linksexternos{
-  text-decoration: none;
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 17px;
-  text-align: center;
-  color: #F2F2F2;
+.opcionA, .opcionB, .opcionC, .opcionD{
+  margin-left: 20px;
+  margin-right: 40px;
 }
 
-.credits{
-  color: #FFFFFF;
-  padding-bottom: 50px;
-  grid-column: 7/11;
-  grid-row: 4;
-  margin: auto;
+.respuesta-A:hover, .respuesta-B:hover, .respuesta-C:hover, .respuesta-D:hover{
+  cursor: pointer;
+  background: #F9A826;
+}
+
+.respuesta-A:focus, .respuesta-B:focus, .respuesta-C:focus, .respuesta-D:focus{
+  background: #F9A826;
 }
