@@ -33,7 +33,7 @@ const injectContext = PassedComponent => {
 			 * state.actions.loadSomeData(); <---- calling this function from the flux.js actions
 			 *
 			 **/
-			state.actions.getAll("https://restcountries.eu/rest/v2/all");
+			state.actions.getCountries("https://restcountries.eu/rest/v2/all");
 			
 		}, []);
 

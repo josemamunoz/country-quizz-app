@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Heebo&family=Montserrat&family=Poppins&display=swap');
 
+
 .CountryQuizz {
   text-align: center;
 }
@@ -12,17 +13,16 @@
   height: 100vh;
 }
 .contenido{
-display: flex;
-flex-direction: column;
-width: 464px;
-height: 515px;
-background: #ffffff;
-border-radius: 24px;
-margin: auto;
-
-}
-.quiz{
-  /* border: solid 1px white; */
+  background-image: url(../img/depositphotos_8130642-stock-illustration-drawing-world-globe-5.jpg);
+  background-size:480px 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 464px;
+  height: 515px;
+  border-radius: 24px;
+  margin: auto;
 }
 .title{
 font-family: Poppins;
@@ -34,38 +34,17 @@ text-transform: uppercase;
 color: #F2F2F2;
 text-align: left;
 }
-.adventuresvg{
-  display: flex;
-  position: absolute;
-  left: 54vw;
-  bottom: 69vh;
-  
-}
-.question{
-  font-family: Poppins;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 24px;
-  line-height: 36px;
-  color: #2F527B;
-  margin-top: 70px;
-}
-.alternatives{
-  display: flex;
-  flex-direction: column;
-  margin: auto;
-}
 
-.respuesta-A, .respuesta-B, .respuesta-C, .respuesta-D{
+.start-quizz{
   display: flex;
-  justify-content: left;
+  justify-content: center;
   align-items: center;
-  margin: 15px;
+  margin: 10px;
   width: 400px;
   height: 56px;
   left: 520px;
   top: 469px;
-  background: #FFFFFF;
+  background: rgba(84, 86, 110, 0.7);
   border: 2px solid rgba(96, 102, 208, 0.7);
   box-sizing: border-box;
   border-radius: 12px;
@@ -74,21 +53,16 @@ text-align: left;
   font-weight: 500;
   font-size: 18px;
   line-height: 27px;
-  color: rgba(96, 102, 208, 0.8);
+  color: #ffff;
   outline: none;
-
+  text-decoration: none;
 } 
-
-.opcionA, .opcionB, .opcionC, .opcionD{
-  margin-left: 20px;
-  margin-right: 40px;
-}
-
-.respuesta-A:hover, .respuesta-B:hover, .respuesta-C:hover, .respuesta-D:hover{
+.start-quizz:hover{
   cursor: pointer;
-  background: #F9A826;
+  background: rgb(67, 72, 119);
 }
-
-.respuesta-A:focus, .respuesta-B:focus, .respuesta-C:focus, .respuesta-D:focus{
-  background: #F9A826;
+.start-quizz:active{
+  cursor: pointer;
+  background: rgb(67, 72, 119);
+  transform: translateY(4px);
 }

@@ -7,6 +7,7 @@ import "./styles/index.css"
 
 import { Home } from "./js/views/home";
 import { Footer } from "./js/component/footer"
+import { Quiz } from "./js/views/quiz";
 /* import { Footer } from "./js/component/footer"; */
 
 
@@ -22,7 +23,7 @@ export const Layout = () => {
                 <div className="container">
                 <Switch>
                     <Route exact path="/" component={Home} />
-{/* 					<Route exact path="/planets" component={Planets} /> */}
+					<Route exact path="/quiz" component={Quiz}/>
 					{/* <Route render={() => <h1>Not found!</h1>} /> */}	
 				</Switch>
 				<Footer />
