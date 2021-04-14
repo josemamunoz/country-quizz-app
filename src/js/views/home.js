@@ -31,7 +31,7 @@ export const Home = () => {
           <div className="quiz">
             <div className="title">Country Quiz</div>
             <div className="contenido">
-              <Link className="start-quizz" to="/quiz" onClick={() =>{actions.getRadomCountries(store.all, store.all.length) }}> Start</Link>
+              <Link className="start-quizz" to="/quiz" onClick={() =>{actions.getRandomCountries(store.all, store.all.length) }}> Start</Link>
             </div>
           </div>
           </div>

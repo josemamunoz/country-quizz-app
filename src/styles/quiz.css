@@ -53,7 +53,7 @@ text-align: left;
   margin: auto;
 }
 
-.respuesta-A, .respuesta-B, .respuesta-C, .respuesta-D{
+.respuesta-A-undefined, .respuesta-B-undefined, .respuesta-C-undefined, .respuesta-D-undefined{
   display: flex;
   justify-content: left;
   align-items: center;
@@ -73,14 +73,63 @@ text-align: left;
   line-height: 27px;
   color: rgba(96, 102, 208, 0.8);
   outline: none;
-
+  text-align:start;
+} 
+.respuesta-A-true, .respuesta-B-true, .respuesta-C-true, .respuesta-D-true{
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin: 10px;
+  width: 400px;
+  height: 56px;
+  left: 520px;
+  top: 469px;
+  background: #60BF88;
+  border: 2px solid #60BF88;
+  box-sizing: border-box;
+  border-radius: 12px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: #FFFFFF;
+  outline: none;
+  text-align:start;
+} 
+.respuesta-A-false, .respuesta-B-false, .respuesta-C-false, .respuesta-D-false{
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin: 10px;
+  width: 400px;
+  height: 56px;
+  left: 520px;
+  top: 469px;
+  background: #EA8282;
+  border: 2px solid #EA8282;
+  box-sizing: border-box;
+  border-radius: 12px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: #FFFFFF;
+  outline: none;
+  text-align:start;
 } 
 
 .opcionA, .opcionB, .opcionC, .opcionD{
-  margin-left: 20px;
-  margin-right: 40px;
+  margin-left: 10px;
+  margin-right: 20px;
 }
 
+.respuesta-A-undefined:hover, .respuesta-B-undefined:hover, .respuesta-C-undefined:hover, .respuesta-D-undefined:hover{
+  cursor: pointer;
+  background: #F9A826;
+  color: #FFFFFF;
+}
 .respuesta-A:hover, .respuesta-B:hover, .respuesta-C:hover, .respuesta-D:hover{
   cursor: pointer;
   background: #F9A826;
@@ -89,5 +138,26 @@ text-align: left;
 
 .respuesta-A:focus, .respuesta-B:focus, .respuesta-C:focus, .respuesta-D:focus{
   background: #F9A826;
+  color: #FFFFFF;
+}
+.button-container-display{
+  display: flex;
+  justify-content:flex-end;
+  align-items:center;
+  margin: 10px 10px 0 0;
+}
+.button-display-none{
+  display: none;
+}
+
+.next{
+  display: block;
+  width: fit-content;
+  padding: 14px 30px 14px 30px;
+  outline: none;
+  background-color: #F9A826;
+  box-shadow: 0px 2px 4px rgba(252, 168, 47, 0.4);
+  border-radius: 12px;
+  border: none;
   color: #FFFFFF;
 }
