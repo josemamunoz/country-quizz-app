@@ -1,5 +1,14 @@
 # Country Quizz App
 
-Esta app fue generada con React
+Es un juego de preguntas que utiliza la información de los países obtenida de la Api :
 
-Es un Quizz (juego de preguntas) que utiliza una API con información de paises
+* Nombre
+* Capital
+* Imagen de banderas
+
+
+## Como funciona
+
+El jugador comienza la partida con una pantalla de inicio que dice comenzar,
+al hacer click se genera una lista al azar de paises y se le pregunta 
+por cual es el País de la capital X 
